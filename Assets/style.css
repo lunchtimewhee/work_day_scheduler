@@ -4,14 +4,31 @@ body {
   line-height: 1;
 }
 
+button {
+  border:none;
+  background-image:url("./saveIcon.png");
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:30%;
+
+}
+
 textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  min-width:100%;
+  min-height:100%;
+
 }
+
+input {
+  display:flex;
+  width:fit-content; 
+}
+
 
 .jumbotron {
   text-align: center;
@@ -31,7 +48,6 @@ textarea {
 }
 
 .row {
-  white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
@@ -65,7 +81,14 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn :hover {
   font-size: 20px;
+  filter:contrast(0);
   transition: all 0.3s ease-in-out;
+}
+
+.right-border{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
 }
