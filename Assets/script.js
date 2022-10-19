@@ -1,7 +1,7 @@
-var currentDayEl = document.getElementById('currentDay');
-var timeBlockList = document.querySelectorAll('.timeblock');
-var currentHour = parseInt(moment().format('HH'));
-var containerEl = document.getElementById('container-all');
+var currentDayEl = document.getElementById('currentDay'); //Element that displays the current date
+var timeBlockList = document.querySelectorAll('.timeblock'); //List of all timeblock elements
+var currentHour = parseInt(moment().format('HH')); //Current hour of the day in format 0-24
+var containerEl = document.getElementById('container-all'); //Container element that holds all of the save buttons
 
 
 //Function to initialize page whenever page is reloaded
